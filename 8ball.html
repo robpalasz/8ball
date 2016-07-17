@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Clare's Magic 8 Ball</title>
+<style> body { background-color: black; color: white; text-align: center; font-family: Arial;} h1 {font-size:72px;} h2 {font-size:36px;} </style>
+</head>
+<body>
+<h1>Clare's Magic 8 Ball</h1>
+</br>
+<p><h2>Please ask a yes or no question.</h2></p>
+<p><button style="font-size: 36px" onclick="answer()">Click Me</button></p>
+</br>
+<h2 id = "demo"></p>
+<script>
+
+function answer() {
+  var x = Math.floor(Math.random()*10);
+    switch (x) {
+      case 0:
+        document.getElementById("demo").innerHTML ="Yes.";
+        break;   
+      case 1:
+        document.getElementById("demo").innerHTML ="No.";
+        break;
+      case 2:
+        document.getElementById("demo").innerHTML ="Plausible.";
+        break;
+      case 3:
+        document.getElementById("demo").innerHTML ="My CPU says no, but the Mythbusters say yes.";
+        break;   
+      case 4:
+        document.getElementById("demo").innerHTML ="I'm too tired, ask me again in two hours.";
+        break;
+      case 5:
+        document.getElementById("demo").innerHTML ="What did you say?";
+        break;
+      case 6:
+        document.getElementById("demo").innerHTML ="That sentence had too many syllables!";
+        break;   
+      case 7:
+        document.getElementById("demo").innerHTML ="That is certain!";
+        break;
+      case 8:
+        document.getElementById("demo").innerHTML ="That is not likely.";
+        break;
+      case 9:
+        document.getElementById("demo").innerHTML ="Yes, but it's gradually looking like no.";
+        break;  
+    }
+}
+
+function reload() {
+    location.reload();
+}
+
+setTimeout(reload, 5000);
+
+</script>
+</body>
+</html>

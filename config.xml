@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "org.neocities.palasz.8ball"
+    versionCode = "10"
+    version     = "1.0.0" >
+
+<!-- versionCode is optional and Android only -->
+
+  <name>Clare's 8 Ball</name>
+
+  <description>
+      A magic 8 ball game.
+  </description>
+
+  <author href="https://palasz.neocities.org" email="robamyregister@earthlink.net">
+      Rob Palasz
+  </author>
+
+<platform name="ios" />
+
+</widget>
